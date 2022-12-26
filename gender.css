@@ -26,6 +26,7 @@ body {
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
     border: 5px solid #666;
+    background-size: 15%;
 }
 
 #input {
@@ -39,20 +40,10 @@ body {
     text-align: center;
 }
 
-#btn {
-    padding: 6px 10px;
-    border: none;
-    box-shadow: 0 0 2px 1px #666;
-    background: #aaa;
-    font-weight: bold;
-    color: #fff;
-    cursor: pointer;
-}
-
 #output {
     width: 80%;
-    height: 200px;
-    /* box-shadow: 0 0 8px 1px #333; */
+    height: 285px;
+    box-shadow: 0 0 25px 1px #333;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -60,7 +51,9 @@ body {
     background: #900c3f;
     color: #eee;
     margin-bottom: 15px;
-    border-radius: 40px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border: 5px solid #581845;
 }
 
 img {
@@ -94,5 +87,11 @@ span1 {
     color: #333;
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 399px) {
+    span1 {
+        font-size: 48px;
+    }
 }
